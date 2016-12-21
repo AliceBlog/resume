@@ -21,7 +21,7 @@ const ManageContainer = React.createClass({
 	
       return (
 
-        <DocumentTitle title="ManageContainer">
+        <DocumentTitle title="Alice个人简历">
        <Component handleloading={this.handleloading}></Component>
         </DocumentTitle>
 

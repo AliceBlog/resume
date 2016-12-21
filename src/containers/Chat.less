@@ -1,0 +1,121 @@
+:local(.root) {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ebebeb;
+    header {
+        width: 100%;
+        color: #fff;
+        padding: 2vh 4vw;
+        background-color: #333;
+        font-size: 1.2em;
+    }
+    .content {
+        width: 100%;
+        height: 84vh;
+        overflow: auto;
+        .alice {
+            margin-top: 2vh;
+            margin-left: 3vw;
+            img {
+                height: 5vh;
+                display: inline-table;
+            }
+            a{
+                color: #00a2ff;
+                text-decoration: none;
+            }
+            .send {
+                position: relative;
+                display: inline-table;
+                top: -1.5vh;
+                min-width: 10vw;
+                max-width: 60vw;
+                padding: 2vw 4vw;
+                min-height: 3vh;
+                line-height: 3vh;
+                background: #ffffff;
+                border-radius: 5px;
+                /* 圆角 */
+                margin-left: 3vw;
+                .arrow {
+                    position: absolute;
+                    top: 1.5vw;
+                    left: -4.6vw;
+                    /* 圆角的位置需要细心调试哦 */
+                    width: 0;
+                    height: 0;
+                    font-size: 0;
+                    border: solid 2.5vw;
+                    border-color: transparent #ffffff transparent transparent;
+                }
+            }
+        }
+        .hr {
+            margin-top: 2vh;
+            margin-right: 3vw;
+            text-align: right;
+            img {
+                height: 5vh;
+                display: inline-table;
+            }
+            .send {
+                position: relative;
+                top: -1.5vh;
+                text-align: left;
+                display: inline-table;
+                padding: 2vw 4vw;
+                min-width: 10vw;
+                max-width: 60vw;
+                min-height: 3vh;
+                line-height: 3vh;
+                background: #a5e463;
+                border-radius: 5px;
+                /* 圆角 */
+                margin-right: 3vw;
+                .arrow {
+                    position: absolute;
+                    top: 1.5vw;
+                    right: -4.6vw;
+                    /* 圆角的位置需要细心调试哦 */
+                    width: 0;
+                    height: 0;
+                    font-size: 0;
+                    border: solid 2.5vw;
+                    border-color: transparent transparent transparent #a5e463;
+                }
+            }
+        }
+    }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+        height: 8vh;
+        width: 100%;
+        background-color: #f4f4f4;
+        input{
+            
+            text-align: left;
+            width: 60%;
+            height: 6vh;
+            line-height: 6vh;
+            margin: auto;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: none;
+            margin-left: 10%;
+        }
+        button{
+            height: 4vh;
+            width: 10vh;
+            line-height: 4vh;
+            position: relative;
+            top: 1vh;
+            margin-left: 5vw;
+            border: 0;
+            background-color: #32aa28;
+            color:#fff;
+        }
+    }
+}
