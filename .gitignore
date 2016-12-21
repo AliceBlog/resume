@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+dist/
+kp-2t5jofua
+deploy.sh
+gitpush.sh
+npm-debug.log
+.DS_Store
