@@ -46,7 +46,7 @@ if(this.refs.bottonTouch.offsetLeft<this.refs.bottonBox.clientWidth){
       <div className={styles.root} style={{backgroundImage:"url("+Bg+")"}}>
        <header>
        <div>
-       {moment(new Date()).format('hh:mm')}
+       {moment(new Date()).format('HH:mm')}
        </div>
        {moment(new Date()).format('YYYY-MM-DD')}
        </header>
