@@ -2,11 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 import DocumentTitle from 'react-document-title'
 import { push } from 'redux-router'
-import styles from "./Basics.less"
+import styles from "./Tel.less"
 import { bindActionCreators } from 'redux'
 import moment from 'moment'
-import Bg from "./../assets/image/3.jpg"
-import Bg1 from "./../assets/image/4.jpg"
+import Bg from "./../assets/image/bg.jpg"
+
 class MyComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -38,7 +38,7 @@ class MyComponent extends React.Component {
   }
   render() {
     return (
-      <div className={`basics`}>
+      <div className={`tel`}>
        <div>
            <h1>Aliceの个人简历</h1>
           <h3>github:<a target="view_window" href="https://github.com/AlicePrincess">https://github.com/AlicePrincess</a></h3>
@@ -54,52 +54,26 @@ class MyComponent extends React.Component {
              
             <div className="col-3">
               <div className={`templatemo_linkall yellow`}>
-               <table>
-                  <tbody>
-                    <tr>
-                      <td>姓名：</td>
-                      <td>吴梦竹</td>
-                    </tr>
-                    <tr>
-                      <td>性别：</td>
-                      <td>女</td>
-                    </tr>
-                    <tr>
-                      <td>英文名：</td>
-                      <td>Alice</td>
-                    </tr>
-                    <tr>
-                      <td>出生日期：</td>
-                      <td>1993.5.23</td>
-                    </tr>
-                    <tr>
-                      <td>婚姻状况：</td>
-                      <td>未婚</td>
-                    </tr>
-                    <tr>
-                      <td>毕业院校：</td>
-                      <td>南京城市职业学院</td>
-                    </tr>
-                    <tr>
-                      <td>学历：</td>
-                      <td>大专</td>
-                    </tr>
-                    <tr>
-                      <td>居住地：</td>
-                      <td>南京光华路</td>
-                    </tr>
-                    <tr>
-                      <td>民族：</td>
-                      <td>汉</td>
-                    </tr>
-                  </tbody>
-                </table>
+               <div>
+               <input type="text" placeholder="公司名称"/>
+               <input type="text" placeholder="您的称呼"/>
+               <input type="text" placeholder="公司地址"/>
+               <input type="text" placeholder="联系电话"/>
+               <textarea placeholder="职位描述"></textarea>
+               <button>发送</button>
+               </div>
                 </div>
             </div>
             <div className="col-3">
-             <div className={`templatemo_linkall`}>
-             <img className="bgImg" src={Bg1} style={{width:"auto"}}/>
-             </div>
+             <div className={`templatemo_linkall text yellow`}>
+              <div> 
+               <h2>更多方式</h2>
+               <p>QQ:706654794</p>
+               <p>TEL:18151667997</p>
+               <p>Email:alice@witdor.com</p>
+               <div className="message">您的联系，我的动力</div>
+                </div>
+                </div>
               
             </div>
             

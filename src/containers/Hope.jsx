@@ -2,11 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 import DocumentTitle from 'react-document-title'
 import { push } from 'redux-router'
-import styles from "./Basics.less"
+import styles from "./Hope.less"
 import { bindActionCreators } from 'redux'
 import moment from 'moment'
-import Bg from "./../assets/image/3.jpg"
-import Bg1 from "./../assets/image/4.jpg"
+import Bg from "./../assets/image/1.jpg"
+import Bg1 from "./../assets/image/2.jpg"
 class MyComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -38,7 +38,7 @@ class MyComponent extends React.Component {
   }
   render() {
     return (
-      <div className={`basics`}>
+      <div className={`hope`}>
        <div>
            <h1>Aliceの个人简历</h1>
           <h3>github:<a target="view_window" href="https://github.com/AlicePrincess">https://github.com/AlicePrincess</a></h3>
@@ -54,43 +54,19 @@ class MyComponent extends React.Component {
              
             <div className="col-3">
               <div className={`templatemo_linkall yellow`}>
-               <table>
-                  <tbody>
+              <table>
+                  <tbody className="second">
                     <tr>
-                      <td>姓名：</td>
-                      <td>吴梦竹</td>
+                      <td>工作期望</td>
                     </tr>
                     <tr>
-                      <td>性别：</td>
-                      <td>女</td>
+                      <td>对于个人发展来说希望找两类的工作，第一是游戏公司，第二是带前端团队，并且公司的开发部前后端分离或者是未来有打算分离，用Angular2或者有打算用的优先考虑~</td>
                     </tr>
                     <tr>
-                      <td>英文名：</td>
-                      <td>Alice</td>
+                      <td>薪资期望</td>
                     </tr>
                     <tr>
-                      <td>出生日期：</td>
-                      <td>1993.5.23</td>
-                    </tr>
-                    <tr>
-                      <td>婚姻状况：</td>
-                      <td>未婚</td>
-                    </tr>
-                    <tr>
-                      <td>毕业院校：</td>
-                      <td>南京城市职业学院</td>
-                    </tr>
-                    <tr>
-                      <td>学历：</td>
-                      <td>大专</td>
-                    </tr>
-                    <tr>
-                      <td>居住地：</td>
-                      <td>南京光华路</td>
-                    </tr>
-                    <tr>
-                      <td>民族：</td>
-                      <td>汉</td>
+                      <td>15K左右，满足第一条的工资可以谈~</td>
                     </tr>
                   </tbody>
                 </table>
@@ -98,7 +74,7 @@ class MyComponent extends React.Component {
             </div>
             <div className="col-3">
              <div className={`templatemo_linkall`}>
-             <img className="bgImg" src={Bg1} style={{width:"auto"}}/>
+             <img className="bgImg" src={Bg1}/>
              </div>
               
             </div>

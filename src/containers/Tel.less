@@ -1,5 +1,5 @@
 
-    .basics{
+    .tel{
  display: flex;
     align-items: center;
     justify-content: center;
@@ -28,9 +28,50 @@
             width: 32%;
             padding: 6px;
             font-size: 1.2em;
-            cursor:pointer;
             img{
+                min-width: 100%;
                 min-height: 100%;
+            }
+            input,textarea{
+                width: 70%;
+                position: relative;
+                margin-top: 20px;
+                left:10%;
+                border: 1px solid #999999;
+                outline: none;
+    height: 34px;
+    padding: 0 5%;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+            textarea{
+                height: 68px;
+                resize: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            button{
+                position: relative;
+               width: 30%;
+               cursor: pointer;
+               height: 35px;
+               border:0;
+               background-color: #199900;
+               color:#fff;
+               line-height: 35px;
+               margin-top: 20px;
+                left:60%;
+                outline: none;
             }
             .templatemo_link {
                 height: 124px;
@@ -42,6 +83,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+            cursor:pointer;
             }
             .templatemo_link1 {
                 height: 330px;
@@ -58,11 +101,18 @@
                 height: 466px;
                 background: #ccc;
                  margin-top: 12px;
-                 overflow: hidden;
+                //  overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                div{
+                    display: block;
+                    .message{
+                        font-size: 0.8em;
+                    }
+                }
             }
+            
             .blue {
                 background: #006ac1;
             }

@@ -5,7 +5,7 @@ import { push } from 'redux-router'
 import styles from "./Experience.less"
 import { bindActionCreators } from 'redux'
 import moment from 'moment'
-import Bg from "./../assets/image/bg.jpg"
+import Bg from "./../assets/image/5.jpg"
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -43,7 +43,9 @@ class MyComponent extends React.Component {
     return (
       <div className={`experience`}>
        <div>
-          <h3>工作教育经验</h3>
+           <h1>Aliceの个人简历</h1>
+          <h3>github:<a target="view_window" href="https://github.com/AlicePrincess">https://github.com/AlicePrincess</a></h3>
+         
           <div className="container">
             <div className="col-3">
                <div className={`templatemo_link greenBlue`} onClick={this.changeType.bind(this,"work")}>

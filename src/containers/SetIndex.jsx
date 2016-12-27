@@ -4,6 +4,7 @@ import DocumentTitle from 'react-document-title'
 import {push} from 'redux-router'
 import styles from "./SetIndex.less"
 import Bg from "./../assets/image/bg.jpg"
+
 import {bindActionCreators} from 'redux'
 import moment from 'moment'
 import userHeader from "./../assets/image/userHeader.jpg"
